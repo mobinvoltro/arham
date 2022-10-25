@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="webpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>webpage</title>
+</head>
+
+<body>
+    <!-- nav -->
+
+    <nav class="navbar">
+        <div class="nav" id="mynavbar">
+            <div class="logo">
+                <img class="logosvg" src="./images/jetclasslogo.svg"/> 
+            </div>
+            <ul>
+                <li><a href="" class="home">HOME</a></li>
+                <li><a href="">HOW IT WORKS</a></li>
+                <li><a href="">FLEET</a> </li>
+                <div class="dropdown">
+                    <button class="dropbtn">SERVICES
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">PRIVATE JET CHARTER</a>
+                        <a href="#">HELICOPTER CHARTER</a>
+                        <a href="#">MEDICAL FLIGHTS</a>
+                        <a href="#">CARGO FLIGHTS</a>
+                        <a href="#">GROUPS FLIGHTS</a>
+                    </div>
+                </div>
+                <li><a href="">MEMBERSHIP</a> </li>
+                
+            </ul>
+            <button class="register">REGISTER</button>
+            <button class="login">LOGIN</button>
+            <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>    
+    </nav>
+
+    <!-- Hero Section -->
+    <section>
+        <div class="hero-bg">                       
+              <div class="h-100vh">
+                <div class="column1">
+                    <h4></h4>
+                    <p></p>
+                  </div>
+                <div id="column2" class="d-flex justify-center align-center text-start text-white">
+                    <div>
+                        <h7 class="hero-heading">Revolutionizing Access To <br> Private Aviation</h7>
+                        <p class="desc-hero">JetClass is the #1 private jet sourcing & booking platform connecting 900+ operators, 7000+ aircraft, 8500+ destinations. Guaranteed Best Prices with NO MARKUPS for our Elite Members.</p>
+                    </div>
+                </div>
+              </div>
+              <div><h3>Tap Into The World of Unlimited Flying Possibilities</h3></div>
+              <div class="jetclass-mobileview">
+                <img src="./images/jetclasssmobileview.png" alt="">
+              </div>
+              <div class="flyingprivate"><p>
+                Flying private has never been this easy! Sift through our simple menu options to get a quote, access your membership, manage your bookings, or plan your next trip from an innovative private jet charter sourcing interface.
+              </p></div>
+              <div><h4 class="whetheryou">Whether you are a travel enthusiast aspiring to soar high in the sky or a technoid looking to charter a business jet, either way, our private jet charter options will match you just right.</h4></div>
+              <div include-html="grid.html"></div>
+              <section>
+                <script src="script.js"></script>
+              </section>
+              <div class="row-11">
+                <div class="col-11">
+                    <img class="jetclass-plane" src="./images/getoffers.svg" alt="">
+                </div>
+                <div class="col-12">
+                    <div> <h4 class="bold-text">
+                        Tech-Driven and Transparent Platform
+                    </h4>
+                <p class="light-text"> Powered by the latest technology, our secure, user-friendly interface democratizes the world of private aviation. The platform is deployed on robust algorithms that rapidly examine, analyze, and collate thousands of flight options from our tight-knit network of verified aircraft operators in real-time, offering you handpicked options. </p>
+                </div>
+                </div>
+              </div>
+              <h6 class="h6-1">Unrivalled Flight Support <br>
+                After confirming the <span style="color:rgb(50, 173, 200) ;">flight with us</span> </h6>
+              <div class="container">
+              <div class="row">
+                <div class="column span-11" >
+                  <h2>Flight brief</h2>
+                  <p>We send pre-departure flight briefs to keep you up-to-date and informed.</p>
+                 </div>
+                 <div class="column span-12" >
+                  <h2>Status update</h2>
+                  <p>Constant update on the status of permissions and slot confirmations on the route.</p>
+                </div>
+                <div class="column span-13" >
+                    <h2>Forecast</h2>
+                    <p>Up to date weather forecast for both departure and arrival destinations, to predict potential delays.</p>
+                  </div>
+                  <div class="column span-14" >
+                    <h2>Assistance</h2>
+                    <p>Assistance with travel documents (e.g. visa applications, & any other specific entry requirements at your destination).</p>
+                  </div>
+                  <div class="column span-15" >
+                    <h2>Catering</h2>
+                    <p>In-flight catering can be ordered from our partnered exclusive caterers, or choose from your preferred restaurant.</p>
+                   </div>
+                   <div class="column span-16" >
+                    <h2>Arrangements</h2>
+                    <p>Arrangements for specific transfers and bodyguard services if required for our customers.</p>
+                  </div>
+                  <div class="column span-17" >
+                      <h2>Immigration</h2>
+                      <p>At JetClass we provide Immigration & Customs clearances assistance to our clients.</p>
+                    </div>
+                    <div class="column span-18" >
+                      <h2>Report</h2>
+                      <p>Regular flight status notifications & post-flight reports to ensure a seamless experience.</p>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- nav responsive function -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mynavbar")
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+        </script>
+        
+</body>
+
+</html>
