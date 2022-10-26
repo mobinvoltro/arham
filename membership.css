@@ -11,12 +11,16 @@
     width: 170px;
   }
   .register{
-    text-decoration:none;
-    
+    text-decoration:none;   
     background: linear-gradient(90deg, #13b89b 0%, #29abe2 100%);
     padding:7px 13px;
     border: none;
     border-radius: 2px;
+}
+.register:hover {
+    background: transparent;
+    border: 1px solid #29abe2;
+    color: #fff;
 }
 .login{
     text-decoration:none;
@@ -24,9 +28,25 @@
     border: none;
     border-radius: 2px;
     color:rgb(50, 173, 200);
+    background: white;
 }
-.dropdown-bg-color {
-     background: rgba(33, 37, 41, 0.8);
+.login:hover {
+    background: transparent;
+    border: 1px solid #29abe2;
+    color: #fff;
+}
+.join-forfree{
+    text-decoration:none;   
+    background: linear-gradient(90deg, #13b89b 0%, #29abe2 100%);
+    padding:7px 13px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+}
+.join-forfree:hover {
+    background: transparent;
+    border: 1px solid #29abe2;
+    color: #29abe2;
 }
 .height {
     height:100vh
@@ -91,10 +111,11 @@ table td:first-child, table th:first-child {
 }
 .enroll-now-title{
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 200;   
 }
 .enroll-now-title-bold{
     font-weight: 700;
+    
 }
 .button-body {
     background: white;
@@ -177,6 +198,9 @@ color: white;
 .argus {
     width: 110px;
 }
+.wyvern {
+    width: 110px;
+}
 .rightreservedborder {
     border-top: 1px solid #3c3c3c;
     padding-top: 20px;
@@ -245,17 +269,29 @@ color: white;
     font-style: normal;
     font-weight: 500;
   }
-
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+ 
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #29abe2 !important;
+    background-color: transparent;
+}
+a:hover {
+    color: #29abe2 !important;
+}
+.container-border {
+    border-radius: 15px;
+}
+.border-radius {
+border-radius: 15px 0 0 15px;
+}
 @media screen and (min-width: 992px) {
 header.navbar-sticky .navbar-expand-lg {
     height: 52px;
 }
 }
-@media screen and (max-width: 576px){
-    .button-center {
-        justify-content: center;
-    }
-}
+
 @media screen and (max-width: 992px){
     .width {
         width:100%
@@ -285,5 +321,31 @@ header.navbar-sticky .navbar-expand-lg {
      
   }
 } 
+@media screen and (max-width: 575px) {
+.argus {
+    width: 20px;
+}
 
+}
+@media screen and (max-width: 575px) {
+    .wyvern {
+        width: 20px;
+    }    
+    }
+    @media screen and (max-width: 575px){
+        .enroll-now-title {
+            text-align: center;
+        }
+        .aligncenter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .btn-center {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
